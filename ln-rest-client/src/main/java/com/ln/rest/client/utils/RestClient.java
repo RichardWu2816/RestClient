@@ -68,7 +68,7 @@ public class RestClient {
 
         RestTemplate restTemplate = new RestTemplate(requestFactory);
 
-        HttpHeaders requestHeaders = createHeaders(username, password);
+        HttpHeaders requestHeaders = createHeaders(Encryptor.decrypt(username), Encryptor.decrypt(password));
         requestHeaders.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(requestHeaders);
         ResponseEntity<Response> responseData = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Response.class);
@@ -124,7 +124,7 @@ public class RestClient {
 
         RestTemplate restTemplate = new RestTemplate(requestFactory);
 
-        HttpHeaders requestHeaders = createHeaders(username, password);
+        HttpHeaders requestHeaders = createHeaders(Encryptor.decrypt(username), Encryptor.decrypt(password));
         requestHeaders.setContentType(MediaType.APPLICATION_JSON);
 
         // Note the body object as first parameter!

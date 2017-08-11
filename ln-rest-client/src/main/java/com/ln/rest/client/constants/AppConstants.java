@@ -18,16 +18,8 @@ public class AppConstants {
     public static final String PATIENT_GET_STATUS_ENDPOINT = "https://uat-api.sandata.com/interfaces/intake/patient/v1/status?uuid=";
     public static final String VISIT_GET_STATUS_ENDPOINT = "https://uat-api.sandata.com/interfaces/intake/visit/v1/status?uuid=";
 
-//    public static final String STAFF_POST_DATA_ENDPOINT = "http://localhost:7073/intake/staff/v1";
-//    public static final String PATIENT_POST_DATA_ENDPOINT = "http://localhost:7071/intake/patient/v1";
-//    public static final String VISIT_POST_DATA_ENDPOINT = "http://localhost:7074/intake/visit/v1";
-//
-//    public static final String STAFF_GET_STATUS_ENDPOINT = "http://localhost:7073/intake/staff/v1/status?uuid=";
-//    public static final String PATIENT_GET_STATUS_ENDPOINT = "http://localhost:7071/intake/patient/v1/status?uuid=";
-//    public static final String VISIT_GET_STATUS_ENDPOINT = "http://localhost:7074/intake/visit/v1/status?uuid=";
-
-    public static final String USER_NAME = "STX10010";
-    public static final String PASSWORD = "TEST_PWD2";
+    public static final String USER_NAME = "Qq3x9qFtJppFMmaPqYqnfQ==";
+    public static final String PASSWORD = "2WnNfb83Z0x5DOdc2Lb0uA==";
 
     public static final String SANDATA_UTC_DATE_TIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ssX";
 
