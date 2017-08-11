@@ -1,0 +1,71 @@
+[
+  {
+    "BusinessEntityID": "10010",
+    "BusinessEntityMedicaidIdentifier": "1234567",
+    "PatientOtherID": "14499602",
+    "SequenceID": "14500602",
+    "PatientMedicaidID": "14501602",
+    "PatientLastName": "Wu",
+    "PatientFirstName": "Richard",
+    "PatientTimezone": "US/Eastern",
+    "CoordinatorID": "14502602",
+    "Address": [
+      {
+        "PatientAddressType": "Home",
+        "PatientAddressIsPrimary": true,
+        "PatientAddressLine1": "26 Harbour Park Dr",
+        "PatientAddressLine2": "2nd Floor",
+        "PatientCity": "Port Washington",
+        "PatientState": "NY",
+        "PatientZip": "10050",
+        "PatientLongitude": 88.888,
+        "PatientLatitude": 88.888,
+        "PatientTimezone": "US/Eastern"
+      },
+      {
+        "PatientAddressType": "Home",
+        "PatientAddressIsPrimary": true,
+        "PatientAddressLine1": "26 Harbour Park Dr",
+        "PatientAddressLine2": "2nd Floor",
+        "PatientCity": "Port Washington",
+        "PatientState": "NY",
+        "PatientZip": "10050",
+        "PatientLongitude": 88.888,
+        "PatientLatitude": 88.888,
+        "PatientTimezone": "US/Eastern"
+      },
+      {
+        "PatientAddressType": "Home",
+        "PatientAddressIsPrimary": true,
+        "PatientAddressLine1": "26 Harbour Park Dr",
+        "PatientAddressLine2": "2nd Floor",
+        "PatientCity": "Port Washington",
+        "PatientState": "NY",
+        "PatientZip": "10050",
+        "PatientLongitude": 88.888,
+        "PatientLatitude": 88.888,
+        "PatientTimezone": "US/Eastern"
+      }
+    ],
+    "Phones": [
+      {
+        "PatientPhoneType": "Home",
+        "PatientPhoneNumber": "5164844400"
+      },
+      {
+        "PatientPhoneType": "Home",
+        "PatientPhoneNumber": "5164844400"
+      }
+    ],
+    "ResponsibleParty": [
+      {
+        "PatientResponsiblePartyLastName": "Doe",
+        "PatientResponsiblePartyFirstName": "John0"
+      },
+      {
+        "PatientResponsiblePartyLastName": "Doe",
+        "PatientResponsiblePartyFirstName": "John1"
+      }
+    ]
+  }
+]

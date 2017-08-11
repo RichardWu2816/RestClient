@@ -1,0 +1,82 @@
+[
+  {
+    "BusinessEntityID": "10010",
+    "BusinessEntityMedicaidIdentifier": "1234567",
+    "VisitOtherID": "32653558",
+    "SequenceID": "32654558",
+    "StaffOtherID": "22646122",
+    "PatientOtherID": "16615759",
+    "PatientMedicaidID": "16617759",
+    "VisitCancelledIndicator": true,
+    "Payer": "ODM",
+    "PayerID": "ODM_ID",
+    "PayerProgram": "State Plan Home Health",
+    "ProcedureCode": "G0156",
+    "TimeZone": "US/Eastern",
+    "AdjInDateTime": "2017-07-19T05:00:00Z",
+    "AdjOutDateTime": "2017-07-19T15:00:00Z",
+    "BillVisit": true,
+    "HoursToBill": 20,
+    "VisitMemo": "testMemo",
+    "MemberVerifiedTimes": true,
+    "MemberVerifiedService": true,
+    "MemberSignatureAvailable": true,
+    "MemberVoiceRecording": true,
+    "Calls": [
+      {
+        "CallExternalID": "49965181",
+        "CallDateTime": "2017-07-19T05:00:00Z",
+        "CallAssignment": "Call In",
+        "CallType": "Mobile",
+        "ProcedureCode": "G0156",
+        "PatientIdentifierOnCall": "02225",
+        "MobileLogin": "MobileLogin",
+        "CallLatitude": 88.888,
+        "CallLongitude": 88.888,
+        "TelephonyPIN": "5555",
+        "OriginatingPhoneNumber": "5164844400"
+      },
+      {
+        "CallExternalID": "49965181",
+        "CallDateTime": "2017-07-19T05:00:00Z",
+        "CallAssignment": "Call In",
+        "CallType": "Mobile",
+        "ProcedureCode": "G0156",
+        "PatientIdentifierOnCall": "02225",
+        "MobileLogin": "MobileLogin",
+        "CallLatitude": 88.888,
+        "CallLongitude": 88.888,
+        "TelephonyPIN": "5555",
+        "OriginatingPhoneNumber": "5164844400"
+      }
+    ],
+    "VisitException": [
+      {
+        "ExceptionID": "15",
+        "ExceptionAcknowledged": true
+      },
+      {
+        "ExceptionID": "15",
+        "ExceptionAcknowledged": true
+      }
+    ],
+    "VisitChanges": [
+      {
+        "SequenceID": "1101",
+        "ChangeMadeByEmail": "test@test.com",
+        "ChangeDateTime": "2017-07-19T05:00:00Z",
+        "ReasonCode": "2101",
+        "ChangeReasonMemo": "test",
+        "ResolutionCode": "A"
+      },
+      {
+        "SequenceID": "1101",
+        "ChangeMadeByEmail": "test@test.com",
+        "ChangeDateTime": "2017-07-19T05:00:00Z",
+        "ReasonCode": "2101",
+        "ChangeReasonMemo": "test",
+        "ResolutionCode": "A"
+      }
+    ]
+  }
+]
