@@ -27,29 +27,8 @@ public class RestClient {
 
     public static void main(String[] args) {
 
-        RestClient restClient = new RestClient();
-        restClient.test_http();
-        restClient.test_https();
-
     }
 
-    public void test_http() {
-        String url = "http://localhost:7081/v1/sftp?uuid=ce7c16b1-97db-4dbf-a7e4-1a681b8bb083";
-
-        String username = "STX10010";
-        String password = "TEST_PWD2";
-
-        invokeRestGetService(url, username, password);
-    }
-
-    public void test_https() {
-        String url = "https://dev-dkr-eng.sandata.com/interfaces/intake/uat/v1/sftp?uuid=762c4518-2e80-4c69-80e7-55d79f493a58";
-
-        String username = "STX10010";
-        String password = "TEST_PWD2";
-
-        invokeRestGetService(url, username, password);
-    }
 
     public Response invokeRestGetService(String url, String username, String password) {
 
@@ -68,7 +47,7 @@ public class RestClient {
 
         RestTemplate restTemplate = new RestTemplate(requestFactory);
 
-        HttpHeaders requestHeaders = createHeaders(Encryptor.decrypt(username), Encryptor.decrypt(password));
+        HttpHeaders requestHeaders = createHeaders(username, password);
         requestHeaders.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(requestHeaders);
         ResponseEntity<Response> responseData = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Response.class);
@@ -124,7 +103,7 @@ public class RestClient {
 
         RestTemplate restTemplate = new RestTemplate(requestFactory);
 
-        HttpHeaders requestHeaders = createHeaders(Encryptor.decrypt(username), Encryptor.decrypt(password));
+        HttpHeaders requestHeaders = createHeaders(username, password);
         requestHeaders.setContentType(MediaType.APPLICATION_JSON);
 
         // Note the body object as first parameter!
